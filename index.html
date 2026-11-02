@@ -1,0 +1,249 @@
+Here is a complete HTML document for the hypoarena project README page. It presents the scientific hypothesis-discovery workbench as a downloadable desktop app, with a clean background, responsive spacing, and a prominent download button.
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>hypoarena - Discover Scientific Hypotheses with Confidence</title>
+<meta name="description" content="hypoarena is a scientific hypothesis-discovery workbench. Build grounded hypothesis-evidence graphs, run generate-debate-evolve loops with offline adapters, rank ideas in Elo tournaments, and produce reproducible reports — all on your own computer.">
+<meta name="keywords" content="hypoarena, hypothesis discovery, evidence graph, hypothesis-evidence graph, Elo tournament, Bayesian evidence, reproducible reports, offline AI adapters, scientific research tool, synthetic literature, paraphrase deduplication">
+<meta name="author" content="hypoarena">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://github.com/kimdoan123/hypoarena">
+<meta property="og:type" content="website">
+<meta property="og:title" content="hypoarena - Discover Scientific Hypotheses with Confidence">
+<meta property="og:description" content="A friendly workbench for exploring scientific ideas: generate hypotheses, weigh the evidence, compare them in fair tournaments, and export tidy reproducible reports. Runs on your own machine.">
+<meta property="og:url" content="https://github.com/kimdoan123/hypoarena">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="hypoarena - Discover Scientific Hypotheses with Confidence">
+<meta name="twitter:description" content="Generate, debate, and rank scientific hypotheses with an offline workbench that keeps every piece of evidence grounded and every report reproducible.">
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: #f4f7fb;
+    background-image: radial-gradient(circle at 10% 0%, #e8f1ff 0%, #f4f7fb 45%, #f7f5ff 100%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1f2937;
+    line-height: 1.75;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 40px 22px 70px 22px;
+  }
+  .card {
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 6px 24px rgba(17, 24, 39, 0.07), 0 2px 6px rgba(17, 24, 39, 0.04);
+    padding: 34px 34px 30px 34px;
+    margin-bottom: 26px;
+    border: 1px solid #eef2f8;
+  }
+  h1 {
+    font-size: 2.15rem;
+    line-height: 1.28;
+    margin: 0 0 14px 0;
+    letter-spacing: -0.5px;
+    color: #0f172a;
+    font-weight: 800;
+  }
+  h2 {
+    font-size: 1.42rem;
+    line-height: 1.35;
+    margin: 0 0 14px 0;
+    color: #0f172a;
+    letter-spacing: -0.2px;
+    font-weight: 700;
+  }
+  h3 {
+    font-size: 1.08rem;
+    margin: 22px 0 8px 0;
+    color: #1e293b;
+    font-weight: 700;
+  }
+  p {
+    margin: 0 0 16px 0;
+    color: #374151;
+  }
+  .lede {
+    font-size: 1.1rem;
+    color: #4b5563;
+    margin-bottom: 26px;
+  }
+  ul, ol {
+    margin: 0 0 18px 0;
+    padding-left: 24px;
+    color: #374151;
+  }
+  li { margin-bottom: 10px; }
+  strong { color: #0f172a; }
+  .btn {
+    display: inline-block;
+    padding: 16px 34px;
+    background: linear-gradient(135deg, #0e9f9a 0%, #5b5bd6 100%);
+    color: #ffffff;
+    font-size: 1.06rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(91, 91, 214, 0.28);
+    transition: transform 0.16s ease, box-shadow 0.16s ease;
+    letter-spacing: 0.2px;
+  }
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 26px rgba(91, 91, 214, 0.36);
+  }
+  .btn-wrap { margin: 6px 0 8px 0; }
+  .btn-note {
+    font-size: 0.92rem;
+    color: #6b7280;
+    margin-top: 12px;
+  }
+  .highlight {
+    background: #f0f7ff;
+    border-left: 4px solid #5b5bd6;
+    padding: 16px 20px;
+    border-radius: 10px;
+    margin: 18px 0 6px 0;
+    color: #334155;
+  }
+  .steps li { margin-bottom: 14px; }
+  .footer-note {
+    text-align: center;
+    color: #94a3b8;
+    font-size: 0.88rem;
+    margin-top: 34px;
+  }
+  a { color: #4f46e5; }
+  code {
+    background: #eef2f8;
+    padding: 2px 7px;
+    border-radius: 6px;
+    font-size: 0.92em;
+    color: #334155;
+  }
+  @media (max-width: 640px) {
+    body { font-size: 16px; }
+    .page { padding: 22px 14px 50px 14px; }
+    .card { padding: 24px 20px; border-radius: 14px; }
+    h1 { font-size: 1.62rem; }
+    h2 { font-size: 1.22rem; }
+    .btn { display: block; text-align: center; padding: 15px 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="card">
+    <h1>🧪 hypoarena - Discover Scientific Hypotheses with Confidence</h1>
+    <p class="lede">hypoarena is a friendly workbench that helps you explore scientific ideas, weigh the evidence behind them, and compare them fairly — all on your own computer, with no internet connection required.</p>
+    <div class="btn-wrap">
+      <a class="btn" href="https://github.com/kimdoan123/hypoarena">⬇️ Get hypoarena</a>
+    </div>
+    <p class="btn-note">Visit this link to download the application.</p>
+  </div>
+
+  <div class="card">
+    <h2>🔬 What Is hypoarena?</h2>
+    <p>Imagine you have a notebook full of questions about how the world works. You suspect some answers are stronger than others, but you want proof — a clear, ordered list of which ideas hold up and which ones fall apart. That is exactly what hypoarena helps you do.</p>
+    <p>hypoarena takes a scientific hypothesis and turns it into a living map. Every idea is connected to the pieces of evidence that support or challenge it, so nothing floats around unattached. Instead of a messy pile of notes, you get a clean, grounded picture of how your reasoning fits together.</p>
+    <p>Behind the scenes, hypoarena works through three friendly stages: it <strong>generates</strong> candidate hypotheses, it lets those candidates <strong>debate</strong> each other by comparing evidence, and it <strong>evolves</strong> the strongest ideas into sharper versions. Each round produces a ranking you can trust, because the comparison is done using a tournament system that has been proven fair for ranking skills.</p>
+    <p>Everything runs offline. There are no accounts, no cloud uploads, and no waiting for a server. Your research stays on your machine, and every report you export is reproducible — if you share it with a colleague, they can run the same steps and see the same results.</p>
+  </div>
+
+  <div class="card">
+    <h2>✨ What You Can Do With It</h2>
+    <ul>
+      <li><strong>Build hypothesis-evidence graphs.</strong> Every hypothesis is pinned to real evidence, so you always know <em>why</em> an idea is being considered.</li>
+      <li><strong>Explore synthetic literature with planted causal chains.</strong> Practice on test scenarios where the correct answer is known in advance — perfect for learning how the tool thinks before you point it at your own questions.</li>
+      <li><strong>Run generate-debate-evolve loops.</strong> Watch ideas improve over several rounds as they compete, refine, and sharpen.</li>
+      <li><strong>Plug in offline adapters.</strong> Choose from interchangeable adapters that keep the whole workflow local and private.</li>
+      <li><strong>Hold Elo-style tournaments.</strong> Hypotheses face off in pairwise comparisons, and the ranking that emerges reliably recovers the correct order of skill — even when the differences are subtle.</li>
+      <li><strong>Clean up duplicates automatically.</strong> Paraphrase detection merges hypotheses that say the same thing in different words, so your final list is tidy and not repetitive.</li>
+      <li><strong>Accumulate evidence the Bayesian way.</strong> Each new piece of evidence updates the confidence in a hypothesis gradually and transparently, rather than jumping to a conclusion.</li>
+      <li><strong>Export reproducible reports.</strong> Get a clear, shareable summary of what you tested, what won, and why.</li>
+    </ul>
+    <div class="highlight">
+      hypoarena is built on a lightweight numerical core and runs comfortably on a normal CPU. An optional extra package adds accelerated processing if you happen to have a compatible graphics card, but it is never required.
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>📥 Getting Started on Windows</h2>
+    <p>You do not need to be a programmer to try hypoarena. Follow these steps in order and you will be up and running in a few minutes.</p>
+    <ol class="steps">
+      <li><strong>Open the download page.</strong> Click the button below. It takes you to the official hypoarena page on GitHub, where the application lives.</li>
+      <li><strong>Visit this link to download the application.</strong> Look for the green button near the top right of that page labelled <em>Code</em>, and choose the option to download the project as a compressed folder (a single file ending in <code>.zip</code>).</li>
+      <li><strong>Save the file somewhere easy to find</strong> — your Downloads folder is fine.</li>
+      <li><strong>Extract the folder.</strong> Right-click the downloaded file and choose <em>Extract All…</em>, then confirm. Windows will create a new folder next to the compressed file.</li>
+      <li><strong>Open the extracted folder</strong> and read the <em>README</em> text file that came with it. It contains the exact command to start the application on your machine.</li>
+      <li><strong>Keep the folder in a permanent place.</strong> If you move or rename it later, the instructions in that text file may need to be repeated.</li>
+    </ol>
+    <div class="btn-wrap">
+      <a class="btn" href="https://github.com/kimdoan123/hypoarena">⬇️ Visit this link to download the application</a>
+    </div>
+    <p class="btn-note">No account payment, subscription, or registration is needed.</p>
+  </div>
+
+  <div class="card">
+    <h2>🧭 Your First Session, Step by Step</h2>
+    <p>Once hypoarena is running, the flow is deliberately simple. You will not be dropped into a blank screen with no guidance.</p>
+    <ol class="steps">
+      <li><strong>Pick a starting scenario.</strong> The included synthetic literature comes with known causal chains, which means the tool already knows the right answer. This is the safest way to see the system work before you trust it with your own question.</li>
+      <li><strong>Choose an offline adapter.</strong> Adapters are the interchangeable engines that propose and refine ideas. Select one from the list; you can swap it later without starting over.</li>
+      <li><strong>Set the number of rounds.</strong> A small number of rounds gives a quick preview. More rounds give the debate time to sharpen the hypotheses. Start small — three rounds is plenty for a first look.</li>
+      <li><strong>Start the run.</strong> hypoarena generates candidate hypotheses, links each one to the evidence it used, and begins the debate and evolution cycle.</li>
+      <li><strong>Review the tournament.</strong> When the run finishes, you get a ranked table. Each hypothesis shows its tournament score and its accumulated evidence, so you can see both <em>how it performed</em> and <em>why</em>.</li>
+      <li><strong>Export the report.</strong> Save the results as a clean summary you can read later, print, or share with a collaborator.</li>
+    </ol>
+    <p>If you want to confirm the system is behaving correctly, compare the final ranking against the planted order in the synthetic scenario. When the recovered order matches the planted one, you know everything is wired up properly.</p>
+  </div>
+
+  <div class="card">
+    <h2>📊 Understanding the Reports</h2>
+    <p>The report is where hypoarena earns its keep. It is written to be readable by someone who has never seen the tool before.</p>
+    <ul>
+      <li><strong>The evidence map</strong> shows each surviving hypothesis with the evidence attached to it. Nothing is listed without a reason.</li>
+      <li><strong>The score table</strong> ranks hypotheses from strongest to weakest based on the tournament, not on guesswork.</li>
+      <li><strong>The confidence trail</strong> records how belief in each hypothesis shifted as evidence accumulated, round by round.</li>
+      <li><strong>The duplicate log</strong> notes which near-identical hypotheses were merged, so you can see the cleaned-up result without losing track of what happened.</li>
+      <li><strong>The run settings</strong> capture every choice you made, which is what makes the report reproducible. Run it again with the same settings and you get the same answer.</li>
+    </ul>
+    <p>Reports are plain files stored on your own computer. There is no automatic syncing and no hidden upload.</p>
+  </div>
+
+  <div class="card">
+    <h2>Who It Is For</h2>
+    <p>hypoarena suits anyone who wants a structured second opinion on a set of competing explanations: students preparing a literature review, researchers stress-testing an idea before committing to it, science communicators checking whether an explanation actually holds together, and curious people who simply enjoy watching reasoning become visible.</p>
+    <p>You do not need to write any code. You do need a normal Windows computer, some free disk space, and a little patience the first time you follow the setup steps.</p>
+  </div>
+
+  <div class="card">
+    <h2>🛠️ Troubleshooting Common Hiccups</h2>
+    <p><strong>The download will not start.</strong> Try a different browser. Some browsers block downloads from unfamiliar pages until you confirm you trust the source.</p>
+    <p><strong>Windows warns you about the file.</strong> Windows protects you from files it has not seen before. Choose to keep the file if you are confident it came from the official link above, then extract it as usual.</p>
+    <p><strong>The extracted folder looks empty.</strong> You may have opened the compressed file instead of the extracted folder. Right-click the downloaded file and choose <em>Extract All…</em> again, then open the newly created folder.</p>
+    <p><strong>Nothing happens when you follow the startup instructions.</strong> Close the window and try again, making sure you are inside the extracted folder and not inside a subfolder. Copying the command exactly as written in the included text file avoids most problems.</p>
+    <p><strong>It feels slow on long runs.</strong> Reduce the number of rounds. Fewer rounds complete faster, and you can always re-run with more rounds once you are happy with your settings.</p>
+  </div>
+
+  <div class="card">
+    <h2>💬 Support and Feedback</h2>
+    <p>The project page is the right place for questions, bug reports, and suggestions. Before posting, check whether someone has already raised the same point — a quick search often saves you time. When reporting a problem, describe what you did, what you expected, and what actually happened, and mention which offline adapter and how many rounds you used.</p>
+    <p>All downloads, updates, and discussion happen in one place: <a href="https://github.com/kimdoan123/hypoarena">https://github.com/kimdoan123/hypoarena</a>.</p>
+  </div>
+
+  <p class="footer-note">hypoarena — a workbench for grounded, reproducible hypothesis discovery.</p>
+
+</div>
+</body>
+</html>
+```
